@@ -1,0 +1,20 @@
+{
+  "name": "tc-node-8",
+  "version": "1.0.0",
+  "description": "All things needed for tc-node-8 students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new-file": "node scripts/new-review.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryantellius/tc-node-8.git"
+  },
+  "author": "Ben Bryant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryantellius/tc-node-8/issues"
+  },
+  "homepage": "https://github.com/Bryantellius/tc-node-8#readme"
+}
