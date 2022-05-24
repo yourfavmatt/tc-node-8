@@ -1,4 +1,4 @@
-# TC-Node-6
+# TC-Node-8
 
 Collective repository for lecture materials, reviews, exercises, and projects for the tc-node-6 class.
 
