@@ -1,0 +1,26 @@
+cd, change directory
+mkdir, make directory
+ls, list directory's contents
+pwd, print working directory
+echo, writes file to location
+rm, deletes file
+., current directory
+.., parent directory
+~, home directory
+open/start, opens file with application
+
+git status, checks repo status
+git pull, fetch and merge most recent changes from remote repo
+git init, initialize git in current directory
+git clone <ssh-link>, clone repo from github
+git add ., stages files in current dir for committing
+git add <filename>, stage specific file for commit
+git commit -m "[note here]", commit changes with note
+git push, pushes commit to the repo
+
+git branch, shows all branches available
+git checkout <branchname>, switches to specified branch (among other things)
+git merge <branchname>, merges specified branch to current branch
+git log, shows commit history
+git diff, shows changes btwn current and previous versions
+git show, shows commit historycd 

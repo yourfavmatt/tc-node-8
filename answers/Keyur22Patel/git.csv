@@ -1,0 +1,14 @@
+git add . 
+git clone 
+git status 
+git branch 
+git branch [branch-name]
+git checkout 
+git merge [branch name]
+git log
+git rm [file]
+git mv 
+git fetch
+git reset 
+git config
+git inti

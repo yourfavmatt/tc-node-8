@@ -1,0 +1,18 @@
+git init, intialize an existing directory as a git repository
+git clone <url>, retrieve an existing repository from a remote location
+git status,  shows modified files in working directory
+git add <file> , adds files as it looks now to your next commit
+git add .,
+git commit -m"",  commits staged content as a new commit snapshot
+git branch,  list branches
+git branch <branchName>, creates new branch
+git checkout -b <branchName>,  creates new branch and moves to it
+git checkout <branchName>,  moves from one branch to another
+git merge <branchName>,  merges branch into current branch
+git merge --abort,  aborts commit
+git log, shows all commits in the current branch history
+git show, shows any object in git in "human readable" format
+git push,  transmit local branch commits to remote repository branch
+git push -u, 
+git pull, fetch and merge any commits from the tracking remote branch
+git rm <>, delete the file from a project and stage the removal for commit
