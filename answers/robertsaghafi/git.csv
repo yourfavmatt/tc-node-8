@@ -1,0 +1,18 @@
+#Robert's Contribution File (git.csv) Pull and Contribute Exercise 
+//Start
+C1: to stage a file - $ git add <file's name>
+C2: to create a snapshot of the code/file - $ git commit -m <message>
+//tip: Commit early and often. Also, commit's message must be concise// 
+C3: to push for the first time - $ git push -u origin main
+    C3.1: to push after the first time - $ git push
+C4: to remove - $ git rm -rf .git
+C5: to check all the remotes existing in the repository - $ git remote --v
+C6: to open a file and edit (e.g. README.md file) - $ code //for Visual Studio// . $ notepad <file name>
+C7: to pull - $ git pull
+C8: to create a new branch - $ git branch <branch name>
+C9: to check all existing branches (and where one is on a branch) - $ git branch
+C10: to switch to another branch - $ git checkout <branch name>
+C11: to see the latest status of a commit on the branch - $ git show
+C12: to see the history of commit - $ got log
+C13: to see the difference between the latest commit in the working directory - $ git diff 
+End//
