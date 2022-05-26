@@ -1,15 +1,14 @@
-#Robert's Contribution File (git.csv) Pull and Contribute Exercise 
-C1: $ git add <file's name>, to stage a file
-C2: $ git commit -m <message>, to create a snapshot of the code/file
-C3: $ git push -u origin main, to push for the first time,
-    C3.1:  $ git push, to push after the first time
-C4: $ git rm -rf .git, to remove
-C5:  $ git remote --verbose, to check all the remotes existing in the repository
-C6:  $ code //for Visual Studio// . $ notepad <file name>, to open a file and edit (e.g. README.md file)
-C7: $ git pull, to pull
-C8:  $ git branch <branch name>, to create a new branch
-C9:  $ git branch, to check all existing branches (and where one is on a branch)
-C10: $ git checkout <branch name>, to switch to another branch
-C11:  $ git show, to see the latest status of a commit on the branch
-C12:  $ got log, to see the history of commit
-C13:  $ git diff, to see the difference between the latest commit in the working directory
+git add <file's name>, to stage a file
+git commit -m <message>, to create a snapshot of the code/file
+git push -u origin main, to push for the first time,
+git push, to push after the first time
+git rm -rf .git, to remove
+git remote --verbose, to check all the remotes existing in the repository
+code //for Visual Studio// . $ notepad <file name>, to open a file and edit (e.g. README.md file)
+git pull, to pull
+git branch <branch name>, to create a new branch
+git branch, to check all existing branches (and where one is on a branch)
+git checkout <branch name>, to switch to another branch
+git show, to see the latest status of a commit on the branch
+git log, to see the history of commit
+git diff, to see the difference between the latest commit in the working directory
