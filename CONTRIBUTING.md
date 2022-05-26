@@ -31,7 +31,7 @@ Complete the following:
 2. Add as many git commands with descriptions that you can. Reference the [Git Handbook](https://git-scm.com/book/en/v2) if desired.
 3. Only add _one_ command/description pair per line, seperating each command and description by a comma. Preferably do not add a title or any other text to the file.
 
-If you need a reference for a started answer, view [answers/Bryantellius/git.csv](/answers/Bryantellius/git.txt).
+If you need a reference for a started answer, view [answers/Bryantellius/git.csv](/answers/Bryantellius/git.csv).
 
 Be sure to add, commit and push your work back to Github. Once your work is on Github, [submit a pull request](#how-to-submit-a-pull-request).
 
