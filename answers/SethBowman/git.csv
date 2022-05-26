@@ -1,0 +1,3 @@
+git add ., Adds modifications in the current working directory to the staging area
+git commit -m "message", Creates a commit of all staged changes and appends a message with the commit
+git push, Pushes commits to an upstream remote branch
