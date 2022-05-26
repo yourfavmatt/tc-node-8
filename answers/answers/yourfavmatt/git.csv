@@ -6,3 +6,5 @@ git push, push to remote repository
 git pull, pull latest
 git diff, enables you to compare changes
 git log, allows you to view the history of the repository and the commit log
+git fetch, downloads the changes from the remote repository into a separate branch name
+git merge, merges change in current branch to main branch
