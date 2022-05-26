@@ -1,0 +1,10 @@
+git status,show modified files in working directory for your next commit
+git add [filename] or .for all files, add files to stage your next commit
+git commit -m "description",commit your stage content as a new commit snapshot
+git push,transmits local repository to remote repository
+git branch,list your branches with an '*' on the main branch
+git branch [branchname],creates a new brach at the current commit
+git checkout,switch to another branch and check it out into your working directory
+git merge [branch],merge the specified brach's history into the current one Note-be sure to commit first
+git log,show the commit history for the currently active branch
+git pull,fetch and merge any commits from the tracking remote branch 
