@@ -1,0 +1,30 @@
+Git Commands -
+
+clear - clears the terminal
+pwd - print working directory
+ls - list everything in directory
+cd - change directory
+~ - home
+open filename.jpg - opens file/image
+mkdir filename.txt - to create a folder
+touch filename.txt - to create a file
+rm filename.txt - to remove/delete a file
+echo "insert text here" > filename.txt - will write text to a file
+git add . - ready to save a copy
+git commit -m "descriptive message" - commit the work to the project
+git push -u origin main - to push your changes/content (first time/only once)
+git push - to push content
+rm -rf . - recursively & forcefully deleting folder, stops from tracking folder
+git clone (GitHub link) -clone project from GitHub
+git init - creates a new git repository
+code . - Open in VS Code
+git status - will indicate what branch you're on & any modifications that need to be added
+git branch - lists all the local branches
+git checkout (branch) - will switch to specified branch
+git merge (branch) - merges a specified branch into the branch you are checkout on 
+git log - shows the git commit
+git diff - shows the compared changes between
+git show - shows the git commit history with the compared changes
+git pull - to pull, fetch & merge the lastest commits from a remote upstream
+
+
