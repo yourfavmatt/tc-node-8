@@ -1,0 +1,29 @@
+Git Commands -
+clear
+pwd
+ls
+cd
+~
+open filename.jpg
+mkdir filename.txt
+touch filename.txt
+rm filename.txt
+mkdir src
+git add .
+git commit -m "descriptive message"
+git push -u origin main
+git push
+rm -rf .
+git clone (GitHub link)
+git init
+code .
+git status
+git branch
+git checkout (branch)
+git merge (branch)
+git log
+git diff
+git show
+git push
+git pull
+
