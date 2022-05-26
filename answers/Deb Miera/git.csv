@@ -1,0 +1,12 @@
+git clone, creates a copy of our remote suppository onto our machine
+git push, take the changes on our machine and puts it onto the remote suppository
+git pull, takes the latest changes on the remote suppository and puts it on the machine
+mkdig <name>, adds a folder
+git add ., puts all our work in the uplint to be commited
+git commit -m "message", commits it to the prjoct history
+git status, shows the state of the working directory
+git branch, lists the branches in a repository
+git branch <name>, creates a new branch
+get checkout <name>, switches to a new branch
+git <merge>, merges a speccific branch into the branch you are currently working in
+git diff, compares the working directory to the one previoulsy commited 
