@@ -1,7 +1,5 @@
-const { join, dirname } = require("path");
+const { join } = require("path");
 const {
-  readFile,
-  writeFile,
   existsSync,
   readdir,
   readFileSync,
@@ -67,9 +65,9 @@ const rl = createInterface({
 const question = util.promisify(rl.question).bind(rl);
 
 async function prompts() {
-  let name = await question("Name: ");
+  let name = await question("File to check: ");
   rl.close();
-  new Templater(name, "Reviews");
+  new Solution(name, "answers");
 }
 
 prompts();
