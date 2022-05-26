@@ -83,9 +83,8 @@ const question = util.promisify(rl.question).bind(rl);
 
 async function prompts() {
   let name = await question("Name: ");
-  let type = await question("Type (Notes|Reviews|Walkthroughs): ");
   rl.close();
-  new Templater(name, type);
+  new Templater(name, "Reviews");
 }
 
 prompts();
