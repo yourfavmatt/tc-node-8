@@ -1,0 +1,8 @@
+git branch, initialize local git repo
+git add, add file to index
+git status, check status of working tree,
+git commit, commit changes in index
+git push, push to remote repository
+git pull, pull latest
+git diff, enables you to compare changes
+git log allows you to view the history of the repository and the commit log
