@@ -1,0 +1,9 @@
+git merge --abort, undo 
+git status, gives status including current branch and all changes 
+git add [file name], stages changes to a specific file 
+git clone, clones a repository 
+git add . , stages changes to all files 
+git commit -m "message", makes a snapshot of a project
+git branch, shows branches
+git checkout [branch name], changes branches
+git log, shows previous commit history and messages 
