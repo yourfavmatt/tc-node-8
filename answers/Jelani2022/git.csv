@@ -1,0 +1,3 @@
+git init  ---- intialize an existing directory as a git repository
+git clone ---- <url> retrieve an existing repository from a remote location
+git status --- shows modified files in working directory 
