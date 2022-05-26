@@ -2,13 +2,13 @@ git init, initializes a localized repository in working directory
 git clone <ssh_repo_link>, clones a remote repository to a local repository
 git pull, pulls most updated version of remote repository to local repository
 git branch,, lists branches in working directory
-git branch <BranchName>, creates a new branch in working directory
+git branch <branch_name>, creates a new branch in working directory
 git add <file name>, adds changes in a specified file to the staging area
 git add ., adds all changes in the working directory to the staging area
 git commit, saves changes that were added to the staging area
 git commit -m "insert_message_here", saves changes in staging area, with concise info about what you did
-git checkout <BranchName>, switches to branch that you want to merge to
-git merge <BranchName>, merges commits from the desired branch to the current branch
+git checkout <branch_name>, switches to branch that you want to merge to
+git merge <branch_name>, merges commits from the desired branch to the current branch
 git merge--abort, cancels attempted merge if conflict arises
 git push, pushes changes from the local repository to the remote repository
 git push --set-upsteam origin <branch_name>, sets branch if making the first push to the remote repo
