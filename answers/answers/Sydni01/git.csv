@@ -1,0 +1,8 @@
+git remote, saves long URLs as short handles as to not type them out each time
+git fetch, communicates with a remote repository and "fetches" down all the information that is in that repository that is not in the current one and stores it in the local database
+git pull, a combination of 'git fetch' and 'git merge' where git will fetch from the remote and then merge it into the current branch
+git help, used to show all documentation in git about any command
+git init, takes a directory and turns it into a new git repository 
+git status, shows the states of files in the working directory and staging area 
+git diff, used to see differences between any two trees
+git commit, takes all file contents that have been staged and records a permanent snapshot in the database
