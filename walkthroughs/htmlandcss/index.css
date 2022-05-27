@@ -1,0 +1,23 @@
+main {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Child selector */
+.navbar > ul {
+  padding: 10px;
+}
+
+/* Descendent */
+.navbar li {
+  display: inline;
+  margin: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
