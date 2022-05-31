@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
 .nav-link {
   color: orange;
   text-decoration: none;
@@ -39,13 +48,25 @@ nav > ul {
   list-style: none;
 }
 
-body {
+#avatar {
+  width: 100px;
+  display: block;
+  margin: 32px auto;
+}
+
+html {
+  position: relative;
   background-color: #222;
   color: #eee;
 }
 
-#avatar {
-    width: 100px;
-    display: block;
-    margin: 32px auto;
+body {
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
