@@ -1,0 +1,22 @@
+git init, initializes a git repository
+git remote add origin <SSH_link>, connects a remote repository to a local one
+git clone, puts a copy of a remote repository on your computer
+git pull, pulls the latest version of the remote repository to your local machine
+-
+git add <file_name>, stages the specific file listed after 'add' 
+git add ., add all modified files in that directory to the staging area
+git commit -m "helpful message", takes a snapshot of the edits along with a message stating the edits made to a set of files
+git push -u origin <branch_name>, sends committed changes to the remote repositories
+-
+git branch, tells you the current branch that you are in out of all branches of the repository
+git branch <branch_name>, creates a new banch named <branch_name>
+git checkout <branch_name>, switches toa new branch as the new repository
+git checkout -b <branch_name>, creates new branch and then opens said branch
+git status, tells your the current branch you're in
+- 
+git merge <branch_name>, merges <branch_name> into the current branch that you're in
+git merge --abort, stops the attempted merge
+-
+git diff, shows the conflicts between your working directory and the previous commit
+git show, shows information of who made an edit last when commit happened, what was merged, plus the changes made that are conflicting
+git log, shows the commit history

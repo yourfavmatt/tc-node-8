@@ -5,5 +5,7 @@ All in-class review notes can be found in this sub-folder. Use the table of cont
 ## Table of Contents
 
 - [Command Line and Version Control](command-line-and-version-control.md)
-- [Git Workflow](git-workflow)
-- [Git Branches and Conflicts](git-branches-and-conflicts)
+- [Git Workflow](git-workflow.md)
+- [Git Branches and Conflicts](git-branches-and-conflicts.md)
+- [HTML Intro](html-intro.md)
+- [CSS Review](css-review.md)

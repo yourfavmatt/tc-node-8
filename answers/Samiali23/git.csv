@@ -1,0 +1,15 @@
+git init, initialize a git repo to make commits and push to github
+git clone, clones a project into your machine 
+git pull, pulls all the current code from github
+git checkout -b <branch>, create and switches to the new branch 
+git branch, shows all the local branches 
+git brnach <branchName>, creates a branch with <branchName>
+git status, tells you the current status of the stages,
+git add ., adds all the files into staging
+git add *.html, adds all the html files
+git add <filename>, adds the specfic file 
+git commit -m "message", makes a commit with a message 
+git merge --abort, stops the process when you run into a conflict
+git show, shows the git commit history
+git log, shows the git commmit
+git diff, shows the compared changes 

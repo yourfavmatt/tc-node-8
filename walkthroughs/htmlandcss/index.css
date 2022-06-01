@@ -1,0 +1,59 @@
+main {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Child selector */
+.navbar > ul {
+  padding: 10px;
+}
+
+/* Descendent */
+.navbar li {
+  display: inline;
+  margin: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Progress Bar */
+.container {
+  position: relative;
+}
+
+.back,
+.front {
+  height: 30px;
+  border-radius: 9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back {
+  width: 100%;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+.front {
+  width: 60%;
+  background-color: #00aa00;
+  z-index: 2;
+  text-align: left;
+}
+
+#meter-label {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  z-index: 3;
+  position: absolute;
+  right: 10px;
+}

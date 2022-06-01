@@ -64,7 +64,7 @@ class Templater {
       txt.slice(0, ulStart) +
       txt
         .slice(ulStart, ulEnd)
-        .concat(`\n- [${this.name}](${this.fileName})`) +
+        .concat(`\n- [${this.name}](${this.fileName}.md)`) +
       txt.slice(ulEnd)
     );
   }

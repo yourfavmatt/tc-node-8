@@ -1,0 +1,9 @@
+git status , will show what branch you are on and if any modifications need to be added and committed
+git checkout <BRANCH> , will switch to specified branch
+git merge <BRANCH> , will merge the specified branch to the branch you checked out on
+git pull , to pull, fetch and merge, the latest commits from a remote upstream branch
+git push , pushes the changes to the remote repository on the patrticular branch
+mkdir <DIRECTORY NAME>, creates a directory 
+git add . , will take all files into the Git repository into the staging area 
+git commit -m "MESSAGE" , records files permanently in the version directory and are being saved in the Git file system
+git clone , imports teh files of a project from the remote repository to our local system

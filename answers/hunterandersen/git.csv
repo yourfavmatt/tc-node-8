@@ -1,0 +1,14 @@
+git init, creates a repo in the current working directory
+git add ., adds any changes to the staged area
+git commit, commits (saves) a change to the history on the local machine
+git push, send the committed changes to the remote repo for collaboration
+git branch, will tell me which branches I have and which one Im on
+git branch <branch_name>, will create a new branch
+git checkout <branch_name>, will switch me onto a different branch
+git status, will still be helpful to see where Im at
+git commit, will still commit changes
+git push, will now fail on the first push on a new branch
+git diff, quickly shows differences
+git log --graph, shows text-based graph of commits
+git show, combines diff and log to show the most info
+git pull, updates my local branch with a remote repo (Github)
