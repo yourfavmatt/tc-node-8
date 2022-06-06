@@ -9,3 +9,4 @@ All in-class review notes can be found in this sub-folder. Use the table of cont
 - [Git Branches and Conflicts](git-branches-and-conflicts.md)
 - [HTML Intro](html-intro.md)
 - [CSS Review](css-review.md)
+- [HTML and CSS](html-and-css.md)
