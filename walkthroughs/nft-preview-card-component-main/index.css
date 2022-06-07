@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: Outfit;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* COMPONENT */
+
+.card {
+  border-radius: 10px;
+}
+
+.card-header img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.avatar {
+  border-radius: 9999px;
+}
+
+.card-avatar {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+
+/* UTILITY */
+.mw-500 {
+  max-width: 500px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* COLORS */
+
+.text-white {
+  color: white;
+}
+
+.bg-dark-1 {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.bg-dark-2 {
+  background-color: hsl(216, 50%, 16%);
+}
+
+.bg-dark-3 {
+  background-color: hsl(215, 32%, 27%);
+}

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 50vmin;
+  min-height: 50vmin;
+  margin: 0.75rem auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border: 1px dashed black;
+  gap: 0.5rem;
+}
+
+.item {
+  background-color: burlywood;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 998px) {
+  html {
+    font-size: 28px;
+  }
+
+  .container {
+    max-width: 800px;
+    min-height: 800px;
+  }
+
+  * {
+    color: red;
+  }
+}
