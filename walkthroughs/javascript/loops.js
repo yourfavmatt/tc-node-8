@@ -41,13 +41,13 @@
 
 // console.log(result);
 
-let correctPassword = "password";
-let password;
-let attempts = 3;
+// let correctPassword = "password";
+// let password;
+// let attempts = 3;
 
-do {
-  password = prompt("Enter password:").toLowerCase();
-  attempts--;
-} while (password != correctPassword && attempts > 0);
+// do {
+//   password = prompt("Enter password:").toLowerCase();
+//   attempts--;
+// } while (password != correctPassword && attempts > 0);
 
-console.log("Logged in");
+// console.log("Logged in");
