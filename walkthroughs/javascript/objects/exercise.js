@@ -59,7 +59,7 @@ function reverseWords(sentence) {
     let letters = word.split(""); // ex "The" => [ "T", "h", "e"]
     letters.reverse(); // ex [ "e", "h", "T" ]
     return letters.join("");
-  })
+  });
 
   return result.join(" ");
 }
@@ -67,3 +67,138 @@ function reverseWords(sentence) {
 console.log(reverseWords(sentence));
 console.log(reverseWords("My name is Ben"));
 console.log(reverseWords("I am Ironman"));
+
+// Exercise 4: CSV Conversion
+
+let csvData = "name,age\nFrodo,50\nSam,38\nMerry,36\nPippin,26";
+
+function csvConverter(data) {
+  // Determine headers from the first row/line of the data
+  // Split the header string to an array of headers
+  let headers = data.slice(0, data.indexOf("\n")).split(","); // [ "name", "age" ]
+
+  // Determine the row data
+  let valuesList = data.slice(data.indexOf("\n") + 1).split("\n");
+
+  const output = valuesList.map((row) => {
+    // Seperate the values into array values
+    let values = row.split(",");
+    let obj = {};
+
+    values.forEach((value, idx) => {
+      if (idx < headers.length) {
+        obj[headers[idx]] = value;
+      } else {
+        obj[`misc${idx - headers.length + 1}`] = value;
+      }
+    });
+
+    return obj;
+  });
+
+  return output;
+}
+
+console.log(csvConverter(csvData));
+console.log(
+  csvConverter("name,city,occupation\nBen,Birmingham,Web Developer,Some Value")
+);
+
+// "name,age\nFrodo,50\nSam,38\nMerry,36\nPippin,26"
+// Headers: | name  | age |
+//          | ----- | --- |
+// Row ex:  | Frodo | 50  |
+function converter(fileData) {
+  // Split the fileData into rows based on every newline character
+  let rows = fileData.split("\n"); // [ "name,age", "Frodo,50", ... ]
+  // Split the first row, or headers, into individual strings based on the , delimiter
+  let headers = rows[0].split(","); // [ "name", "age" ]
+
+  let result = [];
+  // Iterate over every content row
+  for (let i = 1; i < rows.length; i++) {
+    let obj = {};
+    let data = rows[i].split(","); // ex [ "Frodo", 50 ]
+    data.forEach((value, index) => {
+      let headerName = headers[index]; // "name", "age", ...
+      obj[headerName] = value;
+    });
+    result.push(obj);
+  }
+
+  return result;
+}
+
+console.log(converter(csvData));
+
+function reduceConvert(fileData) {
+  // Return an array of objects from a string of rows
+  // Store headers
+  // Store result
+  let output = fileData.split("\n").reduce((output, row, index, arr) => {
+    // Split row values into an array of values
+    let values = row.split(",");
+    // Detemine headers (first row)
+    if (index == 0) {
+      // Working with headers
+      output.headers = values;
+    } else {
+      // Working with table data
+      let obj = {};
+      values.forEach((val, index) => {
+        if (index < output.headers.length) {
+          obj[output.headers[index]] = val;
+        } else {
+          obj[`misc${index - output.headers.length + 1}`] = val;
+        }
+      });
+
+      if (!output.records) {
+        output.records = [];
+      }
+
+      output.records.push(obj);
+    }
+
+    return output;
+  }, {});
+
+  console.log(output);
+
+  return output.records;
+}
+
+console.log(reduceConvert(csvData));
+
+// More Reduce
+
+let scores = [1, 2, 3, 4, 5];
+
+// Score Stats
+// Avg, Max, Min
+
+let stats = scores.reduce(
+  (stats, score, index, arr) => {
+    // Sum to Avg
+    if (index != arr.length - 1) {
+      stats.avg += score;
+    } else {
+      stats.avg = (stats.avg + score) / arr.length;
+    }
+
+    // Find Max
+    if (stats.max == null || stats.max < score) {
+      stats.max = score;
+    }
+
+    // Find Min
+    if (stats.min == null || stats.min > score) {
+      stats.min = score;
+    }
+
+    return stats;
+  },
+  { min: null, max: null, avg: 0 }
+);
+
+console.log(stats);
