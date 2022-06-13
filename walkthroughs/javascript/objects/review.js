@@ -54,7 +54,30 @@ let person = {
 };
 
 function capitalizeName(person) {
-  return person.name[0].toUpperCase() + person.name.slice(1);
+  return person.firstName[0].toUpperCase() + person.firstName.slice(1);
 }
 
 capitalizeName(person); // returns "Ben" without mutating the parameter object
+
+// Parsing/Manipulating Strings and Arrays
+let names = ["ben", "cam", "seth"];
+
+let lastName = "bryant";
+
+lastName[0]; // "b"
+
+lastName[0].toUpperCase() + lastName.slice(1); // "B" + "ryant" => "Bryant"
+
+// using a for loop
+
+for (let i = 0; i < names.length; i++) {
+  console.log(names[i][0].toLowerCase() + names[i].slice(1));
+}
+
+// vs the array forEach
+
+names.forEach((name) => {
+  if (name.length > 2) {
+    console.log(`${name} includes an 'e': ${name.includes("e")}`);
+  }
+});
