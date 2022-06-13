@@ -202,3 +202,23 @@ let stats = scores.reduce(
 );
 
 console.log(stats);
+
+// Returning a function
+
+function createGreeting(greeting) {
+  return function (name) {
+    console.log(`${greeting}, ${name}!`);
+  };
+}
+
+let sayHi = createGreeting("Hi");
+let sayHello = createGreeting("Hello");
+let sayHowdy = createGreeting("Howdy");
+
+sayHi("Cam");
+sayHello("Ben");
+sayHowdy("Seth");
+
+// Receiving a function as a parameter
+
+scores.forEach(console.log);
