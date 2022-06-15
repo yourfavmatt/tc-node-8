@@ -14,3 +14,4 @@ All in-class review notes can be found in this sub-folder. Use the table of cont
 - [JS Functions](js-functions.md)
 - [JS Objects](js-objects.md)
 - [JS Higher-Order Functions](js-higher-order-functions.md)
+- [JS OOP](js-oop.md)

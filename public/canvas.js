@@ -1,47 +1,36 @@
 console.log("Hello World!");
 
-let veggies = [
-  {
-    name: "celery",
-    rating: 10,
-  },
-  {
-    name: "tomatoes",
-    rating: 7,
-  },
-  {
-    name: "potatoes",
-    rating: 8,
-  },
-  {
-    name: "carrots",
-    rating: 7,
-  },
-  {
-    name: "eggplant",
-    rating: 9,
-  },
-];
-
-let hobbit = {
-  name: "Frodo",
-  age: 50,
-};
-
-// Access Every Value
-
-console.log(veggies);
-
-// Sort
-let sortedVeggies = Array.from(veggies); // creates a new array from the contents of veggies
-
-sortedVeggies.sort((a, b) => {
-  // Ascending order
-  if (a.rating < b.rating) {
-    return 1;
-  } else {
-    return -1;
+class Player {
+  constructor(name, marker) {
+    this.name = name;
+    this.marker = marker;
   }
-});
 
-console.log(sortedVeggies);
+  play(space) {
+    console.log(`${this.name} places ${this.marker} on ${space}`);
+  }
+}
+
+class TicTacToeGame {
+  markers = ["X", "O"];
+
+  constructor() {
+    this.players = [];
+    this.board = new Array(9).fill("_");
+  }
+
+  start() {
+    alert("Welcome to Tic Tac Toe! You already know how to play.");
+
+    this.markers.forEach((marker, i) => {
+      let name = prompt(`Who will be player ${i + 1} and use ${marker}?`);
+
+      this.players.push(new Player(name, marker));
+    });
+
+    console.log(this.players);
+  }
+
+  turn() {}
+}
+
