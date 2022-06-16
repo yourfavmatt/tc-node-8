@@ -1,33 +1,87 @@
 console.log("Hello World!");
 
-// Random number - answer
-let answer = Math.floor(Math.random() * 100) + 1; // random number b/w 1-100
-// User's guess
-let userGuess;
+// generate a number
+// ask for a number
+// evaluate the guess
+// give feedback
+// track the score
 
-// A way to repeat guessing
-do {
-  turn();
-} while (answer != userGuess); // continue the loop if user guesses incorrectly
+class Game {
+  answer = null;
+  guess = null;
+  player = null;
+  score = 0;
+  time = 0;
+  timer = null;
+  isPlaying = false;
 
-function turn() {
-  userGuess = prompt("Guess a whole number between 1 and 100:");
-  userGuess = parseInt(userGuess);
+  start() {
+    // Intro
+    alert(
+      "Welcome to the number guessing game!\n\nYou'll  be asked to guess a whole number between 1 and 100.\n\nGood luck!"
+    );
 
-  if (isValid(userGuess)) {
-    // Logic to evaluate the guess
-    if (answer < userGuess) {
-      alert("You guessed to HIGH");
-    } else if (answer > userGuess) {
-      alert("You guessed to LOW");
-    } else {
-      alert("You guessed CORRECTLY");
+    // Generate the answer
+    this.answer = this.generateNumber(1, 100);
+
+    // Change the state to is playing
+    this.isPlaying = true;
+
+    // Start timer
+    this.timer = setInterval(() => {
+      console.log("timer", this.time)
+      this.time++;
+    }, 1000);
+
+    // Begin turns
+    this.turns();
+  }
+
+  turns() {
+    let userInput = prompt("Your guess:");
+
+    if (userInput.toLowerCase() == "quit") {
+      return this.end();
     }
-  } else {
-    alert("You didn't give me a valid guess..");
+
+    this.guess = parseInt(userInput);
+
+    this.score++;
+
+    if (isNaN(this.guess)) {
+      alert("You didn't give me a valid number...");
+    } else {
+      if (this.guess > this.answer) {
+        alert("Too high");
+      } else if (this.guess < this.answer) {
+        alert("Too low");
+      } else {
+        alert(`Correct!`);
+
+        this.end();
+      }
+    }
+
+    if (this.isPlaying) {
+      this.turns();
+    }
+  }
+
+  end() {
+    alert(
+      `You finished with a score of ${this.score} in ${this.time} seconds.`
+    );
+
+    clearInterval(this.timer);
+    this.timer = null;
+    this.score = 0;
+    this.time = 0;
+    this.isPlaying = false;
+  }
+
+  generateNumber(min = 1, max = 10) {
+    return Math.round(Math.random() * (max - min) + min);
   }
 }
 
-function isValid(input) {
-  return typeof input == "number" && !isNaN(input);
-}
+new Game().start();
