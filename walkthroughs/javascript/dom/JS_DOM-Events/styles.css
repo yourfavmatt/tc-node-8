@@ -33,6 +33,26 @@ body {
   color: #000014;
 }
 
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  min-width: 25%;
+  font-size: 2rem;
+}
+
+.alert-info {
+  background-color: navy;
+  color: white;
+}
+
+.alert-success {
+  background-color: green;
+  color: white;
+}
+
 .root {
   text-align: center;
   min-height: 100vh;
