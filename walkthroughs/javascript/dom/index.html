@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <script src="./index.js" defer></script>
+    <style>
+      #container {
+        width: 250px;
+        height: 250px;
+        background: lightblue;
+        position: relative;
+      }
+
+      #box {
+        width: 75px;
+        height: 75px;
+        background: burlywood;
+        position: absolute;
+        animation: perimeter 5s infinite;
+        left: 0;
+        top: 0;
+      }
+
+      @keyframes perimeter {
+        25% {
+          left: 175px;
+          top: 0;
+          transform: rotateX(90deg);
+        }
+
+        50% {
+          left: 175px;
+          top: 175px;
+          transform: rotateX(180deg);
+        }
+
+        75% {
+          left: 0;
+          top: 175px;
+          transform: rotateX(270deg);
+        }
+
+        100% {
+          top: 0;
+          left: 0;
+          transform: rotateX(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="container">
+        <h1>Document Object Model</h1>
+
+        <input type="text" id="title" />
+
+        <div id="container">
+          <div id="box"></div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <p>&copy; 2022</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

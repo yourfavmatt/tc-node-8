@@ -13,3 +13,6 @@ All in-class review notes can be found in this sub-folder. Use the table of cont
 - [JS Variables and Data Types](js-variables-and-data-types.md)
 - [JS Functions](js-functions.md)
 - [JS Objects](js-objects.md)
+- [JS Higher-Order Functions](js-higher-order-functions.md)
+- [JS OOP](js-oop.md)
+- [JS DOM](js-dom.md)
