@@ -1,50 +1,82 @@
 console.log("Hello World!");
 
-let root = document.getElementById("root");
+let resultDisplay = document.querySelector("#result");
+let num1 = document.querySelector("#num1");
+let num2 = document.querySelector("#num2");
+let form = document.querySelector("form");
+let op = document.querySelector("#op");
 
-let h1 = document.querySelector("h1");
+class Calculator {
+  result = 0;
 
-h1.textContent = "Changed the title via DOM manipulation";
+  add(a, b) {
+    let res;
 
-let listItems = document.querySelectorAll("li");
+    if (b == undefined || isNaN(b)) {
+      res = this.result + a;
+    } else {
+      res = a + b;
+    }
 
-let main = document.querySelector("main");
+    this.result = res;
+    return this.result;
+  }
 
-for (let element of listItems) {
-  element.textContent = element.textContent.toUpperCase();
+  subtract(a, b) {
+    let res;
+
+    if (b == undefined || isNaN(b)) {
+      res = this.result - a;
+    } else {
+      res = a - b;
+    }
+
+    this.result = res;
+    return this.result;
+  }
+
+  multiply(a, b) {
+    let res;
+
+    if (b == undefined || isNaN(b)) {
+      res = this.result * a;
+    } else {
+      res = a * b;
+    }
+
+    this.result = res;
+    return this.result;
+  }
+
+  divide(a, b) {
+    let res;
+
+    if (b == undefined || isNaN(b)) {
+      res = this.result / a;
+    } else {
+      res = a / b;
+    }
+
+    this.result = res;
+    return this.result;
+  }
+
+  display() {
+    return this.result;
+  }
 }
 
-let btn = document.createElement("button");
+let calculator = new Calculator();
 
-btn.textContent = "Click Me!";
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-btn.onclick = function (event) {
-  alert("You clicked the button");
-};
+  let a = parseFloat(num1.value);
+  let b = parseFloat(num2.value);
 
-main.appendChild(btn);
+  resultDisplay.textContent = calculator[op.value](a, b);
 
-let input = document.querySelector("#title");
-
-input.addEventListener("keyup", (event) => {
-  console.log(event);
-  h1.textContent = event.target.value;
+  num1.value = "";
+  num1.focus();
+  num2.value = "";
 });
-
-// main.replaceChild(btn, h1);
-
-// main.removeChild(h1);
-
-let time = 0;
-
-// let stopwatch = setInterval(() => {
-//   if (time == 10) {
-//     clearInterval(stopwatch);
-//   } else {
-//     h1.textContent = ++time;
-//   }
-// }, 1000);
-
-setTimeout(() => {
-  btn.textContent = "Changed after 5 secs";
-}, 5000);
