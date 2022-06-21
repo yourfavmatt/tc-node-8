@@ -40,13 +40,24 @@
         border-left: 1px solid #555;
       }
     </style>
-    <script src="./async/promises.js"></script>
+    <script src="./async/fetching-data.js" defer></script>
   </head>
   <body>
     <div id="root">
       <main>
         <h1>JavaScript Lessons</h1>
         <p>We'll be viewing our work in the browser console.</p>
+        <form>
+          <label for="gifSearch">Search</label
+          ><input
+            type="search"
+            name="gifSearch"
+            id="gifSearch"
+            placeholder="Coding"
+          />
+          <button type="submit">Get Gif</button>
+        </form>
+        <img src="" alt="" id="gif" />
         <ul>
           <li>
             Open the dev tools with <kbd>F12</kbd> or Right-Click => Inspect.
