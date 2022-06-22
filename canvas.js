@@ -1,23 +1,35 @@
-let testArr = [1, 2, 3, 4, 5];
+// Function declaration - this binding
+// create a dynamic this binding
 
-function bubbleSort(arr) {
-  let result = Array.from(arr);
+// Arrow Notation - this binding
+// binds this to the context at DEFINITION
 
-  for (let i = 0; i < result.length; i++) {
-    for (let j = 0, temp; j < result.length - i - 1; j++) {
-      if (result[j] < result[j + 1]) {
-        temp = result[j];
-        result[j] = result[j + 1];
-        result[j + 1] = temp;
-      }
-    }
-  }
-
-  return result;
+function greet() {
+  console.log(`Hello! My name is ${this.name}`);
 }
 
-console.log(bubbleSort(testArr), "with bubble sort");
+const greetArrow = () => {
+  console.log(`Hello! My name is ${this.name}`);
+};
 
-testArr.sort((a, b) => b - a);
+console.log("Caller context is the script scope");
 
-console.log(testArr, "with .sort");
+greet();
+
+greetArrow();
+
+let arr = [1, 2, 3, 4, 5];
+
+let math = {
+  value: 10,
+  multiplyByLength(num) {
+    console.log(this);
+    return num * this.value;
+  },
+};
+
+math.multiplyByLength = math.multiplyByLength.bind(math);
+
+let result = arr.map((num, _, self) => num * self.length);
+
+console.log(result);

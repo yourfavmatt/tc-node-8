@@ -17,3 +17,4 @@ All in-class review notes can be found in this sub-folder. Use the table of cont
 - [JS OOP](js-oop.md)
 - [JS DOM](js-dom.md)
 - [JS Async](js-async.md)
+- [JS et al](js-et-al.md)
